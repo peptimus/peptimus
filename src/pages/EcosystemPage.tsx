@@ -15,7 +15,7 @@ const STACK = [
     icon: Cpu,
     items: [
       { name: "OpenAI GPT-4o-mini", role: "De novo peptide design and interpretation", url: "https://openai.com" },
-      { name: "Replit AI Integration", role: "Managed API proxy with no key exposure", url: "https://replit.com" },
+      { name: "OpenAI Proxy Layer", role: "Server-side API proxy with no client key exposure", url: "https://openai.com" },
     ],
     desc: "The AI layer translates natural language research goals into peptide sequences. Two parallel OpenAI calls handle interpretation and variant generation simultaneously.",
   },
@@ -50,7 +50,7 @@ const STACK = [
     items: [
       { name: "PostgreSQL", role: "Primary DB storing all peptides, metadata, users", url: "https://postgresql.org" },
       { name: "Drizzle ORM", role: "Type-safe SQL query builder", url: "https://orm.drizzle.team" },
-      { name: "Replit DB", role: "Managed PostgreSQL instance", url: "https://replit.com" },
+      { name: "Managed PostgreSQL", role: "Managed PostgreSQL instance with automated backups", url: "https://postgresql.org" },
     ],
     desc: "All generated peptides are persisted in PostgreSQL with full metadata. Drizzle ORM provides type-safe access with complex aggregate queries.",
   },
@@ -78,7 +78,7 @@ const STACK = [
       { name: "Three.js / React Three Fiber", role: "3D DNA helix in hero section", url: "https://threejs.org" },
       { name: "TanStack Query", role: "Server state management", url: "https://tanstack.com/query" },
     ],
-    desc: "The frontend is a React SPA with path-based routing for the Replit preview proxy. Three.js renders the animated DNA helix on the landing page.",
+    desc: "The frontend is a React SPA with path-based routing and client-side navigation. Three.js renders the animated DNA helix on the landing page.",
   },
 ];
 
@@ -98,10 +98,10 @@ const NFTMETA = [
 ];
 
 const MONOREPO = [
-  { path: "artifacts/peptimus/", desc: "React + Vite frontend app", color: "#06b6d4" },
-  { path: "artifacts/api-server/", desc: "Express 5 API server (port 8080)", color: "#8b5cf6" },
+  { path: "packages/peptimus/", desc: "React + Vite frontend app", color: "#06b6d4" },
+  { path: "packages/api-server/", desc: "Express 5 API server (port 8080)", color: "#8b5cf6" },
   { path: "packages/db/", desc: "Drizzle schema, migrations, and client", color: "#00ff9f" },
-  { path: "packages/integrations-openai-ai-server/", desc: "OpenAI client via Replit proxy", color: "#ec4899" },
+  { path: "packages/integrations-openai-ai-server/", desc: "OpenAI server-side integration client", color: "#ec4899" },
   { path: "packages/ui/", desc: "Shared Shadcn/Radix UI components", color: "#f59e0b" },
 ];
 

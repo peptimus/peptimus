@@ -150,11 +150,11 @@ const SWIMLANE_COLORS = ["#00f5ff", "#8b5cf6", "#00ff9f", "#f59e0b"];
 const SWIMLANE_RESULTS = ["Wallet address stored", "6 peptides in DB", "Score insights visible", "cNFT on Solana mainnet"];
 
 const TECH_SPECS = [
-  { key: "AI Model", value: "OpenAI gpt-4o-mini", note: "via Replit AI Integration proxy" },
+  { key: "AI Model", value: "OpenAI gpt-4o-mini", note: "server-side proxy, no key exposure" },
   { key: "Blockchain", value: "Solana Mainnet Beta", note: "slot time ~400ms" },
   { key: "NFT Standard", value: "cNFT via Bubblegum v5", note: "Metaplex UMI SDK" },
   { key: "Wallet", value: "Jupiter Unified Wallet", note: "20+ wallets supported" },
-  { key: "Database", value: "PostgreSQL + Drizzle ORM", note: "via Replit DB" },
+  { key: "Database", value: "PostgreSQL + Drizzle ORM", note: "managed PostgreSQL instance" },
   { key: "API Layer", value: "Express 5 + TypeScript", note: "rate-limited, CORS" },
   { key: "Frontend", value: "React 18 + Vite + Tailwind", note: "Framer Motion animations" },
   { key: "RPC", value: "Helius Mainnet RPC", note: "high-throughput Solana endpoint" },
