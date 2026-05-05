@@ -1,0 +1,46 @@
+name: Bug Report
+description: Report a bug in the Peptimus web app
+title: "[bug] "
+labels: ["bug", "triage", "frontend"]
+assignees:
+  - peptimusdev
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug in the Peptimus frontend. Please fill out all sections.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: |
+        Browser: Chrome 124 / Firefox 126
+        Wallet: Phantom / Backpack / Solflare
+        OS: macOS / Windows / Linux
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console Errors or Screenshots

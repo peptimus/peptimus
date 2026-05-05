@@ -1,0 +1,26 @@
+name: Feature Request
+description: Suggest a new feature for the Peptimus web app
+title: "[feat] "
+labels: ["enhancement", "frontend"]
+assignees:
+  - peptimusdev
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Motivation
+      placeholder: What is the problem this feature would solve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      placeholder: Describe the feature you want to see.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Mockups, screenshots, or references.
